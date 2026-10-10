@@ -47,7 +47,7 @@ represents the community in public spaces.
 ## Enforcement
 
 Report abusive, harassing, or otherwise unacceptable behavior privately to the maintainers
-through the repository's [private advisory form](https://github.com/capgym/cap-x/security/advisories/new).
+through the repository's [private advisory form](https://github.com/dexori/cap-x/security/advisories/new).
 Reports will be reviewed promptly and handled with respect for the reporter's privacy and
 security.
 

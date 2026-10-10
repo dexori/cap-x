@@ -18,7 +18,7 @@ APIs, documentation, reproducibility reports, and benchmark tooling.
 Clone the submodules and create the base Python 3.10 environment:
 
 ```bash
-git clone --recurse-submodules https://github.com/capgym/cap-x.git
+git clone --recurse-submodules https://github.com/dexori/cap-x.git
 cd cap-x
 uv python install 3.10
 uv venv --python 3.10

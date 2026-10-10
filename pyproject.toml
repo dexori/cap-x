@@ -1,12 +1,12 @@
 [project]
 name = "capx"
 version = "0.1.0"
-description = "CaP-X: Code-as-Policies eXtended with RL for V(L)A code-as-action with simulators (LIBERO/robosuite/BEHAVIOR)."
+description = "Personal reproducible experiments for comparing coding agents in robot manipulation."
 readme = "README.md"
 requires-python = ">=3.10, <3.13"
 license = "MIT"
 authors = [
-  { name = "CaP-X Authors" }
+  { name = "dexori" }
 ]
 keywords = ["reinforcement-learning", "LLM", "VLM", "robotics", "VeRL", "GRPO", "PPO"]
 classifiers = [
@@ -61,10 +61,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://capgym.github.io/"
-Repository = "https://github.com/capgym/cap-x"
-Documentation = "https://github.com/capgym/cap-x/tree/main/docs"
-Issues = "https://github.com/capgym/cap-x/issues"
+Homepage = "https://github.com/dexori/cap-x"
+Repository = "https://github.com/dexori/cap-x"
+Documentation = "https://github.com/dexori/cap-x/tree/main/docs"
+Issues = "https://github.com/dexori/cap-x/issues"
 Paper = "https://arxiv.org/abs/2603.22435"
 
 [project.optional-dependencies]

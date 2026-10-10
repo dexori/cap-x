@@ -8,7 +8,7 @@ revision of the default branch; older commits and research snapshots are not sup
 ## Reporting a vulnerability
 
 Please do not open a public issue for a suspected vulnerability. Use GitHub's
-[private vulnerability reporting](https://github.com/capgym/cap-x/security/advisories/new) and
+[private vulnerability reporting](https://github.com/dexori/cap-x/security/advisories/new) and
 include a minimal reproduction, affected revision, impact, and any suggested mitigation.
 Maintainers will acknowledge a report as soon as practical, investigate it, and coordinate a
 fix and disclosure with the reporter.
