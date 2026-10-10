@@ -1,0 +1,82 @@
+cff-version: 1.2.0
+message: "If you use CaP-X in your research, please cite the paper below."
+title: "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation"
+type: software
+version: 0.1.0
+date-released: 2026-03-23
+license: MIT
+repository-code: "https://github.com/capgym/cap-x"
+url: "https://capgym.github.io/"
+authors:
+  - family-names: Fu
+    given-names: Letian
+  - family-names: Yu
+    given-names: Justin
+  - family-names: El-Refai
+    given-names: Karim
+  - family-names: Kou
+    given-names: Ethan
+  - family-names: Xue
+    given-names: Haoru
+  - family-names: Huang
+    given-names: Huang
+  - family-names: Xiao
+    given-names: Wenli
+  - family-names: Wang
+    given-names: Guanzhi
+  - family-names: Niu
+    given-names: Dantong
+  - family-names: Li
+    given-names: Fei-Fei
+  - family-names: Shi
+    given-names: Guanya
+  - family-names: Wu
+    given-names: Jiajun
+  - family-names: Sastry
+    given-names: Shankar
+  - family-names: Zhu
+    given-names: Yuke
+  - family-names: Goldberg
+    given-names: Ken
+  - family-names: Fan
+    given-names: Linxi
+preferred-citation:
+  type: article
+  title: "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation"
+  year: 2026
+  journal: "arXiv preprint arXiv:2603.22435"
+  doi: "10.48550/arXiv.2603.22435"
+  url: "https://arxiv.org/abs/2603.22435"
+  authors:
+    - family-names: Fu
+      given-names: Letian
+    - family-names: Yu
+      given-names: Justin
+    - family-names: El-Refai
+      given-names: Karim
+    - family-names: Kou
+      given-names: Ethan
+    - family-names: Xue
+      given-names: Haoru
+    - family-names: Huang
+      given-names: Huang
+    - family-names: Xiao
+      given-names: Wenli
+    - family-names: Wang
+      given-names: Guanzhi
+    - family-names: Niu
+      given-names: Dantong
+    - family-names: Li
+      given-names: Fei-Fei
+    - family-names: Shi
+      given-names: Guanya
+    - family-names: Wu
+      given-names: Jiajun
+    - family-names: Sastry
+      given-names: Shankar
+    - family-names: Zhu
+      given-names: Yuke
+    - family-names: Goldberg
+      given-names: Ken
+    - family-names: Fan
+      given-names: Linxi

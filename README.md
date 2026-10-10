@@ -1,14 +1,15 @@
-
-
-
 # CaP-X
 
 ### A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation
 
 [Project Page](https://capgym.github.io/) &ensp;|&ensp; [Paper](https://arxiv.org/abs/2603.22435) 
 
-**Max Fu<sup>&#42;,1,2</sup>, Justin Yu<sup>&#42;,2</sup>, Karim El-Refai<sup>&#42;,2</sup>, Ethan Kou<sup>&#42;,2</sup>, Haoru Xue<sup>&#42;,1,2</sup>,
-Huang Huang<sup>3</sup>, Wenli Xiao<sup>4</sup>, Guanzhi Wang<sup>1</sup>, Fei-Fei Li<sup>3</sup>, Guanya Shi<sup>4</sup>, Jiajun Wu<sup>3</sup>,
+[![CI](https://github.com/capgym/cap-x/actions/workflows/ci.yml/badge.svg)](https://github.com/capgym/cap-x/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Python 3.10–3.12](https://img.shields.io/badge/Python-3.10%E2%80%933.12-blue.svg)](pyproject.toml)
+
+**Letian (Max) Fu<sup>&#42;,1,2</sup>, Justin Yu<sup>&#42;,2</sup>, Karim El-Refai<sup>&#42;,2</sup>, Ethan Kou<sup>&#42;,2</sup>, Haoru Xue<sup>&#42;,1,2</sup>,
+Huang Huang<sup>3</sup>, Wenli Xiao<sup>4</sup>, Guanzhi Wang<sup>1</sup>, Dantong Niu<sup>1,2</sup>, Fei-Fei Li<sup>3</sup>, Guanya Shi<sup>4</sup>, Jiajun Wu<sup>3</sup>,
 Shankar Sastry<sup>2</sup>, Yuke Zhu<sup>1</sup>, Ken Goldberg<sup>&dagger;,2</sup>, Jim Fan<sup>&dagger;,1</sup>**
 
 <sup>1</sup>NVIDIA &ensp; <sup>2</sup>UC Berkeley &ensp; <sup>3</sup>Stanford University &ensp; <sup>4</sup>Carnegie Mellon University
@@ -23,7 +24,7 @@ Shankar Sastry<sup>2</sup>, Yuke Zhu<sup>1</sup>, Ken Goldberg<sup>&dagger;,2</s
 
 | Component      | What it does                                                                                                                                                                                   |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **CaP-Gym**    | Interactive Gymnasium environments where agents control robots by generating Python code that composes perception and control primitives. 39 tasks across Robosuite, LIBERO-PRO, and BEHAVIOR. |
+| **CaP-Gym**    | Interactive Gymnasium environments where agents control robots by generating Python code that composes perception and control primitives. 187 tasks across Robosuite, LIBERO-PRO, and BEHAVIOR. |
 | **CaP-Bench**  | Systematic benchmark evaluating coding agents across abstraction levels, interaction modes, and visual grounding modalities. 8 tiers (S1-S4 single-turn, M1-M4 multi-turn).                    |
 | **CaP-Agent0** | Training-free agentic framework with multi-turn visual differencing, auto-synthesized skill libraries, and parallel ensembled reasoning.                                                       |
 | **CaP-RL**     | Reinforcement learning on the coding agent via GRPO, using environment rewards to post-train language models. Transfers from sim to real with minimal gap.                                     |
@@ -195,18 +196,37 @@ uv run --no-sync --active capx/envs/launch.py \
 | [Development](docs/development.md) | Testing, linting, LIBERO/GraspNet setup, checkpoints, known issues |
 | [Real-World Franka Panda Bringup](docs/real-franka.md) | Bringup with robots_realtime, real-robot QuickStart |
 | [RL Training](docs/rl-training.md) | CaP-RL with GRPO/VeRL, sim-to-real transfer |
+| [Reproducibility](docs/reproducibility.md) | Fair comparison protocol, artifacts, and result reporting |
 | [Skill Library Compilation](scripts/skill_library_compilation/README.md) | Analyze eval outputs, compile reusable skill libraries |
+
+---
+
+## Open-source development
+
+CaP-X is research software: simulator setup and full benchmark runs require substantial
+GPU resources, model credentials, and separately licensed datasets. The default CI therefore
+checks repository integrity, Python syntax and packaging, and the web UI; hardware-dependent
+regression tests remain explicit local jobs.
+
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change.
+- Use the [reproducibility guide](docs/reproducibility.md) when comparing models or methods.
+- Report security issues according to [SECURITY.md](SECURITY.md). Generated policy code is
+  executed in-process, so only run trusted models and prompts outside an isolated machine.
+- Third-party simulators, models, and datasets keep their own licenses; see
+  [THIRD_PARTY.md](THIRD_PARTY.md).
+
+Community participation is governed by the [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
 ## Citation
 
 ```bibtex
-@article{fu2025capx,
+@article{fu2026capx,
   title     = {{CaP-X}: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation},
-  author    = {Fu, Max and Yu, Justin and El-Refai, Karim and Kou, Ethan and Xue, Haoru and Huang, Huang and Xiao, Wenli and Wang, Guanzhi and Li, Fei-Fei and Shi, Guanya and Wu, Jiajun and Sastry, Shankar and Zhu, Yuke and Goldberg, Ken and Fan, Jim},
+  author    = {Fu, Letian and Yu, Justin and El-Refai, Karim and Kou, Ethan and Xue, Haoru and Huang, Huang and Xiao, Wenli and Wang, Guanzhi and Niu, Dantong and Li, Fei-Fei and Shi, Guanya and Wu, Jiajun and Sastry, Shankar and Zhu, Yuke and Goldberg, Ken and Fan, Linxi},
   journal   = {arXiv preprint arXiv:2603.22435},
-  year      = {2025},
+  year      = {2026},
   url       = {https://arxiv.org/abs/2603.22435}
 }
 ```

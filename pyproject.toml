@@ -4,15 +4,19 @@ version = "0.1.0"
 description = "CaP-X: Code-as-Policies eXtended with RL for V(L)A code-as-action with simulators (LIBERO/robosuite/BEHAVIOR)."
 readme = "README.md"
 requires-python = ">=3.10, <3.13"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
   { name = "CaP-X Authors" }
 ]
 keywords = ["reinforcement-learning", "LLM", "VLM", "robotics", "VeRL", "GRPO", "PPO"]
 classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
   "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
-  "License :: OSI Approved :: MIT License",
   "Operating System :: OS Independent",
 ]
 
@@ -55,6 +59,13 @@ dependencies = [
   "pillow>=10",
   "cloudpickle",
 ]
+
+[project.urls]
+Homepage = "https://capgym.github.io/"
+Repository = "https://github.com/capgym/cap-x"
+Documentation = "https://github.com/capgym/cap-x/tree/main/docs"
+Issues = "https://github.com/capgym/cap-x/issues"
+Paper = "https://arxiv.org/abs/2603.22435"
 
 [project.optional-dependencies]
 dev = [
@@ -181,8 +192,6 @@ exclude = [
 [tool.ruff]
 line-length = 100
 target-version = "py312"
-select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM"]
-ignore = ["N803", "UP047", "N806", "F401", "E501"]
 force-exclude = true
 extend-exclude = [
   "capx/third_party/**",
@@ -191,6 +200,10 @@ extend-exclude = [
   "scripts/**",
   "outputs/**",
 ]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = ["N803", "UP047", "N806", "F401", "E501"]
 
 [tool.ruff.lint.per-file-ignores]
 "capx/third_party/**" = ["ALL"]
